@@ -29,7 +29,7 @@ def create_dir() -> str:
     return dir_path
 
 
-def remove_files(gtadir: str, outdir="") -> str:
+def remove_files(gtadir: str, outdir=""):
     # Check GTA directory
     if not is_gta_folder(gtadir):
         raise CustomException(f"Could not locate GTA5.exe in {gtadir}")
